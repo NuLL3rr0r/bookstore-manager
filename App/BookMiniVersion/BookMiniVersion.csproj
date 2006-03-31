@@ -1,0 +1,191 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9288C35-DA49-462F-9818-E38312D6860B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookMiniVersion</RootNamespace>
+    <AssemblyName>BookMiniVersion</AssemblyName>
+    <ApplicationIcon>TOON-XP Icons %28V1c%29 Icon 06.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>03E0565537B31C3D24A5DC05EE88BD0BC09D845E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>BookMiniVersion_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Documents and Settings\Administrator\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>fa-IR</TargetCulture>
+    <CreateWebPageOnPublish>false</CreateWebPageOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MSBabaei, Version=1.0.2332.37612, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MSBabaei.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="base.Designer.cs">
+      <DependentUpon>base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuy.Designer.cs">
+      <DependentUpon>frmbuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsell.Designer.cs">
+      <DependentUpon>frmsell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui.Designer.cs">
+      <DependentUpon>gui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="base.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbuy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmbuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsell.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmsell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>gui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pw.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>pw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwchange.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>pwchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pw.Designer.cs">
+      <DependentUpon>pw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pwchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwchange.Designer.cs">
+      <DependentUpon>pwchange.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BookMiniVersion_TemporaryKey.pfx" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="Resources\TOON-XP Icons %28V1c%29 Icon 20.ico" />
+    <None Include="Resources\TOON-XP Icons %28V1c%29 Icon 16.ico" />
+    <None Include="Resources\TOON-XP Icons %28V1c%29 Icon 18.ico" />
+    <None Include="Resources\TOON-XP Icons %28V1c%29 Icon 48.ico" />
+    <None Include="Resources\TOON-XP Icons %28V1c%29 Icon 66.ico" />
+    <None Include="Resources\TOON-XP Icons %28V1c%29 Icon 76.ico" />
+    <None Include="Resources\TOON-XP Icons %28V1c%29 Icon 57.ico" />
+    <None Include="Resources\TOON-XP Icons %28V1c%29 Icon 40.ico" />
+    <None Include="Resources\TOON-XP Icons %28V1c%29 Icon 42.ico" />
+    <None Include="Resources\TOON-XP Icons %28V1c%29 Icon 08.ico" />
+    <None Include="Resources\TOON-XP Icons %28V1c%29 Icon 01.ico" />
+    <None Include="Resources\TOON-XP Icons %28V1c%29 Icon 25.ico" />
+    <Content Include="TOON-XP %28My eBooks Folder%29.ico" />
+    <Content Include="TOON-XP Icons %28V1c%29 Icon 06.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Data.Access.Components.2.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Data Access Components 2.8</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

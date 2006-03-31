@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BookMiniVersion", "BookMiniVersion\BookMiniVersion.vdproj", "{BAE46E53-A67B-42B4-B56F-BE5E98C52BBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAE46E53-A67B-42B4-B56F-BE5E98C52BBC}.Debug|Default.ActiveCfg = Debug
+		{BAE46E53-A67B-42B4-B56F-BE5E98C52BBC}.Debug|Default.Build.0 = Debug
+		{BAE46E53-A67B-42B4-B56F-BE5E98C52BBC}.Release|Default.ActiveCfg = Release
+		{BAE46E53-A67B-42B4-B56F-BE5E98C52BBC}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
